@@ -1,0 +1,28 @@
+{
+	"data": [
+		[
+			"11223344",
+			"Luis Gomez",
+			"Empleado",
+			"Bus",
+			"Barrio1",
+			"3012930374"
+		],
+		[
+			"55667788",
+			"Fabian Perez",
+			"Empleado",
+			"Moto propia",
+			"Barrio2",
+			"3002940447"
+		],
+		[
+			"99001122",
+			"Douglas Castillo",
+			"Supervisor",
+			"Carro Propio",
+			"Barrio3",
+			"3045288205"
+		]
+	]
+}

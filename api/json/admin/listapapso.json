@@ -1,0 +1,19 @@
+{
+	"data": [
+		[
+			"<center>1</center>",
+			"Papso Obra Negra",
+			" <form action='#' method='post'><input type='hidden' value='123' name='ref'><input type='submit' value='Ver Mas' class='btn btn-primary btn-md'></form>"
+		],
+		[
+			"<center>2</center>",
+			"Papso Maquinaria Pesada",
+			" <form action='#' method='post'><input type='hidden' value='123' name='ref'><input type='submit' value='Ver Mas' class='btn btn-primary btn-md'></form>"
+		],
+		[
+			"<center>3</center>",
+			"Papso Herramientas",
+			" <form action='#' method='post'><input type='hidden' value='123' name='ref'><input type='submit' value='Ver Mas' class='btn btn-primary btn-md'></form>"
+		]
+	]
+}

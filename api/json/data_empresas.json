@@ -1,0 +1,27 @@
+{
+	"data": [
+		
+		
+		[
+			"Constructora Bolivar",
+			"Activo",
+			"<button>Editar</button><button>Eliminar</button>"
+		],
+		[
+			"CemexCol",
+			"Activo",
+			"<button>Editar</button><button>Eliminar</button>"
+		],
+		[
+			"Confuturo",
+			"Inactivo",
+			"<button>Editar</button><button>Eliminar</button>"
+		],
+		[
+			"Constructora RJ",
+			"Activo",
+			"<button>Editar</button><button>Eliminar</button>"
+		]
+		
+	]
+}

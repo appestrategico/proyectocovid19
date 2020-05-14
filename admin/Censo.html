@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="description" content="Admin, Dashboard, Bootstrap" />
+	<link rel="shortcut icon" sizes="196x196" href="assets/images/logo.png">
+	<title>Inicio</title>
+	
+	<link rel="stylesheet" href="../libs/bower/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../libs/bower/material-design-iconic-font/dist/css/material-design-iconic-font.css">
+	<!-- build:css assets/css/app.min.css -->
+	<link rel="stylesheet" href="../libs/bower/animate.css/animate.min.css">
+	<link rel="stylesheet" href="../libs/bower/fullcalendar/dist/fullcalendar.min.css">
+	<link rel="stylesheet" href="../libs/bower/perfect-scrollbar/css/perfect-scrollbar.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/css/core.css">
+	<link rel="stylesheet" href="../assets/css/app.css">
+	<!-- endbuild -->
+	<link rel="stylesheet" href="../fonts/fuentes.css">
+	<script src="../libs/bower/breakpoints.js/dist/breakpoints.min.js"></script>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/funciones.js"></script>
+
+	<script>
+    Breakpoints();
+$(document).ready(function() {
+    $('.header').load('menu.html');
+});
+</script>
+</head>
+	
+<body class="menubar-left menubar-unfold menubar-light theme-primary" onload="menu()">
+<!--============= start main area -->
+
+<!-- APP NAVBAR ==========-->
+<nav id="app-navbar" class="navbar navbar-inverse navbar-fixed-top primary">
+  
+  <!-- navbar header -->
+  <div class="navbar-header">
+    <button type="button" id="menubar-toggle-btn" class="navbar-toggle visible-xs-inline-block navbar-toggle-left hamburger hamburger--collapse js-hamburger">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+    </button>
+
+    <button type="button" class="navbar-toggle navbar-toggle-right collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="zmdi zmdi-hc-lg zmdi-more"></span>
+    </button>
+
+    <button type="button" class="navbar-toggle navbar-toggle-right collapsed" data-toggle="collapse" data-target="#navbar-search" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="zmdi zmdi-hc-lg zmdi-search"></span>
+    </button>
+
+    <a href="index.html" class="navbar-brand">
+      <span class="brand-icon"><i class="fa fa-gg"></i></span>
+      <span class="brand-name">Software</span>
+    </a>
+  </div><!-- .navbar-header -->
+  
+  <div class="navbar-container container-fluid">
+    <div class="collapse navbar-collapse" id="app-navbar-collapse">
+      <ul class="nav navbar-toolbar navbar-toolbar-left navbar-left">
+        <li class="hidden-float hidden-menubar-top">
+          <a href="javascript:void(0)" role="button" id="menubar-fold-btn" class="hamburger hamburger--arrowalt is-active js-hamburger">
+            <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+          </a>
+        </li>
+        <li>
+          <h5 class="page-title hidden-menubar-top hidden-float">Tablero</h5>
+        </li>
+      </ul>
+
+
+    </div>
+  </div><!-- navbar-container -->
+</nav>
+<!--========== END app navbar -->
+
+<!-- APP ASIDE ==========-->
+<aside id="menubar" class="menubar light">
+  <div class="app-user">
+    <div class="media">
+      <div class="media-left">
+        <div class="avatar avatar-md avatar-circle">
+          <a href="javascript:void(0)"><img class="img-responsive" src="assets/images/221.jpg" alt="avatar"/></a>
+        </div><!-- .avatar -->
+      </div>
+      <div class="media-body">
+        <div class="foldable">
+          <h5><a href="javascript:void(0)" class="username">Fabian Perez</a></h5>
+          <ul>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropdown-toggle usertitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <small>Administrador</small>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu animated flipInY">
+
+                <li>
+                  <a class="text-color" href="">
+                    <span class="m-r-xs"><i class="fa fa-user"></i></span>
+                    <span>Perfil</span>
+                  </a>
+                </li>
+
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a class="text-color" href="logout.html">
+                    <span class="m-r-xs"><i class="fa fa-power-off"></i></span>
+                    <span>Salir</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div><!-- .media-body -->
+    </div><!-- .media -->
+  </div><!-- .app-user -->
+
+
+  <div class="header"></div>
+</aside>
+<!--========== END app aside -->
+
+<!-- navbar search -->
+<div id="navbar-search" class="navbar-search collapse">
+  <div class="navbar-search-inner">
+    <form action="#">
+      <span class="search-icon"><i class="fa fa-search"></i></span>
+      <input class="search-field" type="search" placeholder="search..."/>
+    </form>
+    <button type="button" class="search-close" data-toggle="collapse" data-target="#navbar-search" aria-expanded="false">
+      <i class="fa fa-close"></i>
+    </button>
+  </div>
+  <div class="navbar-search-backdrop" data-toggle="collapse" data-target="#navbar-search" aria-expanded="false"></div>
+</div><!-- .navbar-search -->
+
+<!-- APP MAIN ==========-->
+<main id="app-main" class="app-main">
+  <div class="wrap">
+	<section class="app-content">
+		<div class="row">
+
+         <div class="col-md-8">
+        <div class="thumbnail white"><center><h3>Encuesta Diaria</h3>
+        <div class="m-b-xl">
+          Las preguntas son obligatoria para poder ingresar a la obra. 
+        </div></center>
+
+          <div class="caption">
+            <h5 align="left">1. ¿Fiebre de 38°C o más ? </h5>
+<p align="center">
+              <a href="#" class="btn btn-primary" role="button">SI</a>
+              <a href="#" class="btn btn-danger" role="button">NO</a><br><br>
+            </p>
+
+            <h5 align="left">2. ¿Tos? </h5>
+<p align="center">
+              <a href="#" class="btn btn-primary" role="button">SI</a>
+              <a href="#" class="btn btn-danger" role="button">NO</a><br><br>
+            </p>
+            <h5 align="left">3. ¿Dificultad para respirar? </h5>
+<p align="center">
+              <a href="#" class="btn btn-primary" role="button">SI</a>
+              <a href="#" class="btn btn-danger" role="button">NO</a><br><br>
+            </p>
+            <h5 align="left">4. ¿Otros (dolor de garganta, dolor de cabeza, malestar general, congestión nasal)? </h5>
+
+<p align="center">
+              <a href="#" class="btn btn-primary" role="button">SI</a>
+              <a href="#" class="btn btn-danger" role="button">NO</a><br><br>
+            </p>
+            <div class="form-group">
+                <div class="checkbox checkbox-primary">
+                  <p align="justify">Manifiesto que en forma voluntaria y sin presion alguna o coaccion me fue informado el objetivo de las preguntas anteriores, las cuales tienen como objeto la deteccion o prevencion y mitigacion, la exposicion al contagio por infeccion aguda causada por el SARS-COV-2 (COVID-19) las cuales he respondido con responsabilidad y veracidad. </p>
+                  <center>
+                  <input type="checkbox" id="checkbox-demo-1">
+                  <label for="checkbox-demo-1">Acepto </label>
+                  </center>
+                </div>
+              </div>
+          </div>
+
+           </div>
+         </div>
+
+
+
+
+
+	</section><!-- #dash-content -->
+</div><!-- .wrap -->
+  <!-- APP FOOTER -->
+
+  <!-- /#app-footer -->
+</main>
+<!--========== END app main -->
+
+
+	<!-- build:js assets/js/core.min.js -->
+	<script src="../libs/bower/jquery/dist/jquery.js"></script>
+	<script src="../libs/bower/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../libs/bower/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+	<script src="../libs/bower/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+	<script src="../libs/bower/jquery-slimscroll/jquery.slimscroll.js"></script>
+	<script src="../libs/bower/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+	<script src="../libs/bower/PACE/pace.min.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js assets/js/app.min.js -->
+	<script src="../assets/js/library.js"></script>
+	<script src="../assets/js/plugins.js"></script>
+	<script src="../assets/js/app.js"></script>
+	<!-- endbuild -->
+	<script src="../libs/bower/moment/moment.js"></script>
+	<script src="../libs/bower/fullcalendar/dist/fullcalendar.min.js"></script>
+	<script src="../assets/js/fullcalendar.js"></script>
+</body>
+</html>
